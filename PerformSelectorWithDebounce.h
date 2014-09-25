@@ -9,4 +9,5 @@
 
 @interface NSObject (PerformSelectorWithDebounce)
 - (void)performSelector:(SEL)aSelector withDebounceDuration:(NSTimeInterval)duration;
+- (void)performSelector:(SEL)aSelector withDebounceDuration:(NSTimeInterval)duration andObject:(id)object;
 @end
