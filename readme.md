@@ -1,9 +1,10 @@
+# Install
 
+Add this to your Podfile
 
+	pod 'PerformSelectorWithDebounce', :git => 'https://github.com/williamhaley/PerformSelectorWithDebounce.git'
 
-PerformSelectorWithDebounce
----------------------------
-
+# Use
 
 A simple way to throttle messages spammed to an object.  
 
