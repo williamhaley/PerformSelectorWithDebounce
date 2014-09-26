@@ -30,8 +30,15 @@ Rather than update your UI 100 times per second, 10 times per second is perfectl
 		[self performSelector:@selector(updateUI) withDebounceDuration:0.1];
 	}
 
+To pass an object along, do the following
 
 
+	#import "PerformSelectorWithDebounce.h"
+
+	- (IBAction)mySliderValueChanged:(id)sender
+	{
+		[self performSelector:@selector(updateUI) withDebounceDuration:0.1 andObject:sender];
+	}
 
 License: MIT
 
